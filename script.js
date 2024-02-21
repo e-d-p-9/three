@@ -49,15 +49,15 @@ function animate() {
   // console.log(camera.position.y)
 
   // set maximum and minimum distance to travel
-  cam_max_dist = 1;
-  cam_min_dist = 1;
+  cam_max_dist = 10;
+  cam_min_dist = -7;
 
   // increment camera position based on distance
   if (camera.position.y > cam_max_dist) {
     // invert the traveling direction
     reverse_multiplier = -1;
   }
-  else if (camera.position.y < 1) {
+  else if (camera.position.y < cam_min_dist) {
     // invert the traveling direction
     reverse_multiplier = 1;
   }

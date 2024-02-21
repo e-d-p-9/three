@@ -49,8 +49,8 @@ function animate() {
   // console.log(camera.position.y)
 
   // set maximum and minimum distance to travel
-  cam_max_dist = 15;
-  cam_min_dist = 2;
+  cam_max_dist = 1;
+  cam_min_dist = 1;
 
   // increment camera position based on distance
   if (camera.position.y > cam_max_dist) {
